@@ -1,0 +1,8 @@
+{
+  "name": "DigiHolo",
+  "app_id": "0ffec791",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
