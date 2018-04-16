@@ -1,3 +1,40 @@
 page-home {
-
+  ion-content{
+      background: radial-gradient(#9c27b0, #6a0080) !important;
+      text-align: center;
+    }
+  .home-button{
+    background-color: white;
+    padding-bottom: 17px;
+    border-radius: 12%;
+    box-shadow: 0px 0px 12px #6a0080;
+    background-color:white;
+    width: 40%;
+    margin:auto;
+  }
+  .text-white{
+    color: white !important;
+  }
+  .nav-home-left-button{
+    font-size: 25px;
+    padding: 0 10px;
+  }
+  .nav-home-right-button{
+    font-size: 20px;
+    padding: 0 10px;
+  }
+  .last-viewed-card{
+    border-radius: 4%;
+    font-size: 75%;
+    width: 88%;
+    top: 20px;
+    margin-left: auto;
+    margin-top: 64px;
+    margin-right: auto;
+    box-shadow: 0px 0px 12px #0e9022;
+  }
+  .last-viewed-card button{
+    font-size: 1.3em;
+    color: #009039;
+  }
 }

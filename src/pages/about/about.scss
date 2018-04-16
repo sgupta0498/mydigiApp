@@ -1,3 +1,59 @@
 page-about {
+      font-size: 1em !important;
+      ion-title{
+        height: 55px;
+      }
+      .toolbar-md{
+        padding: 0 !important
+      }
+      shrinking-segment-header {
 
+          background-color: #009624;
+          color: #fff;
+          display: flex;
+
+
+      }
+      .primary-color{
+        background: #29c581 !important;
+        color: #fff !important;
+
+        .toolbar-title-md{
+          color: #fff !important;
+        }
+      }
+      .segment-md .segment-button{
+        height: 5.5em;
+        line-height: 6em;
+      }
+      ion-content{
+          background: radial-gradient(#00ff90, #278644) !important;
+          vertical-align: middle;
+        }
+      .product-history-card{
+        border-radius: 10px;
+        min-height:50px;
+        width: 88%;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0px 0px 12px #0e9022;
+      }
+      .font-18{
+        font-size: 18px;
+      }
+      .font-20{
+        font-size: 20px;
+
+      }
+      .font-15{
+        font-size: 15px;
+      }
+      .segment-md-dark .segment-button.activated, .segment-md-dark .segment-button.segment-activated{
+        color: #37a35a !important;
+
+      }
+      .segment-md-dark .segment-button.activated, .segment-md-dark .segment-button.segment-activated {
+        border-color: #38a85d !important;
+        border-bottom-width: 5px;
+      }
 }

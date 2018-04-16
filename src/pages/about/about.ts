@@ -10,5 +10,7 @@ export class AboutPage {
   constructor(public navCtrl: NavController) {
 
   }
+  section: string = 'two';
+  somethings: any = new Array(20);
 
 }

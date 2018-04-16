@@ -1,17 +1,77 @@
-<ion-header>
+<!-- <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <button round float-left><ion-icon style="font-" ios="ios-menu" md="md-menu"></ion-icon></button>
+    <button float-right>Home</button>
   </ion-navbar>
-</ion-header>
+</ion-header> -->
+<ion-content padding-top center>
+  <!-- <div text-white float-left class="text-white nav-home-left-button"><ion-icon style="font-" ios="ios-menu" md="md-menu"></ion-icon></div>
+  <div text-white float-right class="text-white nav-home-right-button">Home</div> -->
+  <!-- <ion-grid>
+    <ion-row>
+      <ion-col col-1 offset-11><button ion-button round><ion-icon style="font-" ios="ios-search" md="md-search"></ion-icon></button></ion-col>
+    </ion-row>
+  </ion-grid> -->
+  <!-- <ion-searchbar></ion-searchbar> -->
+   <!-- <ion-icon ios="ios-search" md="md-search"></ion-icon> -->
+  <!-- <ion-list>
+    <ion-item *ngFor="let item of items">
+      {{ item }}
+    </ion-item>
+  </ion-list> -->
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <h1 text-white text-center class="text-white" padding-top style="margin-top: 20vw;">DigiHolo</h1>
+  <img padding-top style="width:100px" src="../../assets/imgs/avatar.png"><br>
+  <h5  class="text-white">John Doe</h5>
+
+  <ion-grid padding-top margin-top>
+    <ion-row padding-top>
+        <div class="home-button" >
+          <img padding-top padding-bottom style="width:50px" src="../../assets/imgs/gray_qr.png"><br>Scan QR
+        </div>
+        <div class="home-button">
+          <img padding-top padding-bottom style="width:50px" src="../../assets/imgs/gray_enter.png"><br>Enter
+        </div>
+    </ion-row>
+  </ion-grid>
+  <ion-row >
+    <ion-card class="last-viewed-card">
+      <ion-card-header>
+        <small>Last Viewed</small>
+      </ion-card-header>
+
+      <ion-list>
+        <button ion-item>
+          <ion-icon name="cart" item-start></ion-icon>
+          Shopping
+        </button>
+
+        <button ion-item>
+          <ion-icon name="medical" item-start></ion-icon>
+          Hospital
+        </button>
+
+        <button ion-item>
+          <ion-icon name="cafe" item-start></ion-icon>
+          Cafe
+        </button>
+
+        <button ion-item>
+          <ion-icon name="paw" item-start></ion-icon>
+          Dog Park
+        </button>
+
+        <button ion-item>
+          <ion-icon name="beer" item-start></ion-icon>
+          Pub
+        </button>
+
+        <button ion-item>
+          <ion-icon name="planet" item-start></ion-icon>
+          Space
+        </button>
+
+      </ion-list>
+    </ion-card>
+  </ion-row>
 </ion-content>

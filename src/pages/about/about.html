@@ -1,11 +1,61 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      About
-    </ion-title>
-  </ion-navbar>
+<ion-header class="product-page-header">
+        <ion-title class="primary-color">
+          Product:   12dm4-nj324-nek43-defk43
+        </ion-title>
+
+    <shrinking-segment-header [scrollArea]="myContent" headerHeight="150">
+
+      <ion-row padding text-center>
+        <ion-col col-12 class="font-18">  Manufacturer: Papsico Ltd.</ion-col>
+        <ion-col col-12 class="font-18">Date of Manufacture: 21/03/2018</ion-col>
+      </ion-row>
+    </shrinking-segment-header>
+
+    <ion-toolbar color="light" mode="md">
+      <ion-segment color="dark" mode="md" [(ngModel)]="section">
+        <ion-segment-button active value="one">
+          <ion-icon ios="ios-git-merge" md="md-git-merge"></ion-icon>
+        </ion-segment-button>
+        <ion-segment-button value="two">
+          <ion-icon name="paper"></ion-icon>
+        </ion-segment-button>
+        <ion-segment-button value="three">
+          <ion-icon name="ios-boat-outline"></ion-icon>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-toolbar>
+
 </ion-header>
 
-<ion-content padding>
+<ion-content fullscreen #myContent>
+
+    <div [ngSwitch]="section" style="margin-top:30px;">
+
+      <ion-list *ngSwitchCase="'one'">
+        <ion-card padding class="product-history-card font-15">
+          Origin
+        </ion-card>
+        <ion-card padding class="product-history-card font-15" *ngFor="let something of somethings">
+          <div>Date</div>
+          <div>Location</div>
+        </ion-card>
+
+      </ion-list>
+
+      <ion-list *ngSwitchCase="'two'">
+        <ion-card padding class="product-history-card font-15">
+          Details
+          <hr>
+          Manufacture:<br>
+          Ingridents:<br>
+          Location:<br>
+        </ion-card>
+      </ion-list>
+
+      <ion-list *ngSwitchCase="'three'">
+
+      </ion-list>
+
+    </div>
 
 </ion-content>
